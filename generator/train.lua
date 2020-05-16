@@ -146,14 +146,11 @@ local function create_decoder()
     						       nn.CAddTable()(
     							   {nn.BatchNormalization(1, 1e-5, 0.1, true)(nn.Linear(params.rnn_size, 1)(context)),
     							    nn.BatchNormalization(1, 1e-5, 0.1, true)(nn.Linear(params.rnn_size, 1)(i[params.layers]))})))
-    
     splitPredForm              = {}
     for tripleidx = 1, params.num_aligned_triples do
-	print(tripleidx)
 	local surf_form_scores = nn.Replicate(params.num_surf_forms, 2)(nn.Reshape(true)(scores[tripleidx]))
 	table.insert(splitPredForm, surf_form_scores)
     end
-
 
     local pred_form          = nn.CMulTable()({
     	    nn.Replicate(params.num_aligned_triples * params.num_surf_forms , 2)(
