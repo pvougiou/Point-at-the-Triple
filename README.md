@@ -17,7 +17,7 @@ In order to download and un-compress the Full dataset in its corresponding folde
 [`dataset.ipynb`](dataset.ipynb) is an iPython Notebook that allows easier inspection of the Full dataset. It provides also further details regarding the structure of the dataset and the functionality of its supporting files.
 
 ## BibTeX
-Please cite the following paper should you use this dataset in your work.
+Please cite the following paper should you use this repository in your work.
 ```
 @article{Vougiouklis2020,
   author    = {Pavlos Vougiouklis and
