@@ -1,4 +1,4 @@
-# Point at the Triple
+# Point at the Triple: Generation of Text Summaries from Knowledge Base Triples
 This repository accompanies our article entitled: "Point at the Triple: Generation of Text Summaries from Knowledge Base Triples" which has been published at the Journal of Artificial Intelligence Research. It contains the code along with the datasets that we used in our experiments.
 
 ## Datasets
